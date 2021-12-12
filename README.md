@@ -14,14 +14,14 @@ Thus we can decide upon such encoding:
 
 | 	      	 | Rectilinear |
 | -------------- | ----------- |
-| horizontal |H> | |0>         |
-| vertical |V>   | |1>         |
+| horizontal H | 0         |
+| vertical V   | 1         |
 
 
 | 	      	   | Diagonal    |
 | ---------------- | ----------- |
-| diagonal |D>     | |0>         |
-| antidiagonal |A> | |1>         |
+| diagonal D     | 0         |
+| antidiagonal A | 1         |
 
 ## Key Exchange
 
