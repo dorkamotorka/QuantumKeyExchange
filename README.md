@@ -28,8 +28,11 @@ Thus we can decide upon such encoding:
 As a convention we will establish a secure channel between Bob and Alice.
 
 1.) Alice randomly selects a string of bits and a string of bases(rectilinear or diagonal) of equal length. Then she transmits a photon for each bit with the corresponding polarization to Bob
+
 2.) Now Bob for each received photon, randomly chooses a basis(rectilinear or diagonal)
+
 3.) Bob and Alice communicate through a public(unsecure) channel and match bases they have choosen. Alice informs Bob of the bases he guessed correctly. Bob and Alice then removes all bits for which Bob guessed basis wrong. 
+
 4.) Now, Alice and Bob have the same bit-string - the KEY.
 
 ## Security
