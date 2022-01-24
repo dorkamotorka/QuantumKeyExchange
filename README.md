@@ -47,6 +47,23 @@ The following can be summarized using a table from the Wikipedia:
 
 ![image](https://user-images.githubusercontent.com/48418580/150877127-b837d597-c98e-44b9-9929-b3e54ba5c913.png)
 
+## Risk Analysis
+
+In order for Alice and Bob to choose the same value of qubit, they must choose the same basis. 
+In case Eve chooses the same basis, she could eavesdroppes it without causing and transmitted bit error. <br>
+There is a:
+- 50% chance Eve can guess the basis correctly
+- 50% that even if Eve guesses the basis wrong, she could still measure the correct bit and transmit it to Bob
+
+Following that there is a:
+
+	$P(x) = (0.5*0.5)^{x}$
+
+chance Alice and Bob might not detect Eve's eavesdropping, where x is the number of checked bits.
+For the sake of completness, here is probability graph:
+
+Consequently in the example script we are using 15 bits to match, since that corresponds to only 1,3% chance Eve might get away unnoticed. 
+
 ## Why it this key exchange more secure?
 
 It's properties are based on physics rather then on math. Math can eventually be broken by using really really really strong computers, while physics not (yet).
