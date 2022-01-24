@@ -23,7 +23,7 @@ Diagonal polarization and its corresponding qubit state are chosen as: **diagona
 
 ![image](https://user-images.githubusercontent.com/48418580/150874216-82690962-08b4-4752-afd7-db145b2aa27a.png)
 
-## Key Exchange
+## Key Exchange (BB84 Protocol)
 
 The purpose of the exchange is to establish a secure channel between Bob and Alice.
 
