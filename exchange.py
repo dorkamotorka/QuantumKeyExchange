@@ -70,19 +70,27 @@ if __name__ == '__main__':
     alice_bases = randint(2, size=n)
     message = encode_message(alice_bits, alice_bases)
 
-    ## Step 2: Bob decides in which basis to measure in:
+    # Step 2(optional): Eve eavesdroppes Alices message and trasmits it to Bob
+    '''
+    eve_bases = randint(2, size=n)
+    intercepted_message = measure_message(message, eve_bases)
+    '''
+
+    ## Step 3: Bob decides in which basis to measure in:
     bob_bases = randint(2, size=n)
     bob_results = measure_message(message, bob_bases)
 
-    ## Step 3: Communicate through public channel which bases Bob guessed correctly
+    ## Step 4: Communicate through public channel which bases Bob guessed correctly
     alice_key = remove_garbage(alice_bases, bob_bases, alice_bits)
     bob_key = remove_garbage(alice_bases, bob_bases, bob_results)
 
-    ## Step 4: Check if selected bits of keys match 
+    ## Step 5: Check if selected bits of keys match 
     sample_size = 15
     bit_selection = randint(n, size=sample_size)
     bob_sample = sample_bits(bob_key, bit_selection)
     alice_sample = sample_bits(alice_key, bit_selection)
-    assert alice_sample == bob_sample
+    if not (alice_sample == bob_sample):
+        print("Attacker intercepted the message, aborting!")
+        exit()
 
-    print("key = %s" % alice_key)
+    print("Established key is \n %s" % alice_key)
