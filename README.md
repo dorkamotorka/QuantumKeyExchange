@@ -59,8 +59,10 @@ Following that there is a:
 
 	$P(x) = (0.5*0.5)^{x}$
 
-chance Alice and Bob might not detect Eve's eavesdropping, where x is the number of checked bits.
+chance Alice and Bob might not detect Eve's eavesdropping, where x is the number of checked bits. <br>
 For the sake of completness, here is probability graph:
+
+![image](https://user-images.githubusercontent.com/48418580/150883191-2421496a-2fc9-449e-81f5-84ae0fccee34.png)
 
 Consequently in the example script we are using 15 bits to match, since that corresponds to only 1,3% chance Eve might get away unnoticed. 
 
