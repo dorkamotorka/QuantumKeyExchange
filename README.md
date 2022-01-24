@@ -15,11 +15,11 @@ Photon (waves) can be polarized in three different ways: **linear**, **circular*
 The last two polarization are mentioned to avoid any confusion later on.
 
 For the case of QKE we will consider linear polarization. Its "sub-types" are **rectilinear** or **diagonal** polarization.
-Rectilinear polarization and its correspoding qubit state is chosen as: **horizontal |0>** and **vertical |1>**.
+Rectilinear polarization and its correspoding qubit state are chosen as: **horizontal |0>** and **vertical |1>**.
 
 ![image](https://user-images.githubusercontent.com/48418580/150874172-e3a774e2-4603-414d-b174-8b8e2b8d0b20.png)
 
-Diagonal polarization and its corresponding qubit state is chosen as: **diagonal |0>** and **anti-diagonal |1>**.
+Diagonal polarization and its corresponding qubit state are chosen as: **diagonal |0>** and **anti-diagonal |1>**.
 
 ![image](https://user-images.githubusercontent.com/48418580/150874216-82690962-08b4-4752-afd7-db145b2aa27a.png)
 
@@ -31,7 +31,7 @@ The purpose of the exchange is to establish a secure channel between Bob and Ali
 
 2.) Now Bob for each received/measured photon, randomly chooses a basis(rectilinear or diagonal). 
 
-3.) Bob and Alice communicate through a public(unsecure) channel and match bases they have choosen. Alice informs Bob of the bases he guessed correctly. Bob and Alice then removes all bits for which Bob guessed the basis wrong. 
+3.) Bob and Alice communicate through a public(unsecure) channel and match bases they have choosen. Alice informs Bob of the bases he guessed correctly. Bob and Alice then removes all bits for which Bob guessed the basis wrong. Note that this step should only be done AFTER Bob receives all the bits, since otherwise Eve (an attacker mentioned later) can be aware of the transmitted bases.
 
 4.) Now, Alice and Bob have the same bit-string - the KEY.
 
@@ -47,3 +47,4 @@ The following can be summarized using a table from the Wikipedia:
 ## Why it this key exchange more secure?
 
 It's properties are based on physics rather then on math. Math can eventually be broken by using really really really strong computers, while physics not (yet).
+The proof of unconditional security based on the axioms of quantum mechanics is difficult and dates back to about 2000.
