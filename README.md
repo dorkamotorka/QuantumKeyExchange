@@ -27,17 +27,20 @@ Diagonal polarization and its corresponding qubit state are chosen as: **diagona
 
 The purpose of the exchange is to establish a secure channel between Bob and Alice.
 
-1.) Alice randomly selects a string of bits and a string of bases(rectilinear or diagonal) of equal length(sufficiently long). Then she transmits a photon for each bit with the corresponding polarization to Bob. For example, bit 1 is transmited as a vertical waveform(if Alice choses rectilinear polarization) and bit 0 as a diagonal wave(if she chooses diagonal polarization).
+1.) Alice randomly selects a string of bits and a string of bases(rectilinear or diagonal) of equal length(sufficiently long). Then she transmits a photon for each bit with the corresponding polarization to Bob. 
+For example, bit 1 is transmited as a vertical waveform(if Alice choses rectilinear polarization) and bit 0 as a diagonal wave(if she chooses diagonal polarization).
 
 2.) Now Bob for each received/measured photon, randomly chooses a basis(rectilinear or diagonal). 
 
-3.) Bob and Alice communicate through a public(unsecure) channel and match bases they have choosen. Alice informs Bob of the bases he guessed correctly. Bob and Alice then removes all bits for which Bob guessed the basis wrong. Note that this step should only be done AFTER Bob receives all the bits, since otherwise Eve (an attacker mentioned later) can be aware of the transmitted bases.
+3.) Bob and Alice communicate through a public(unsecure) channel and match bases they have choosen. Alice informs Bob of the bases he guessed correctly. Bob and Alice then removes all bits for which Bob guessed the basis wrong. 
+Note that this step should only be done AFTER Bob receives all the bits, since otherwise Eve (an attacker mentioned later) can be aware of the transmitted bases.
 
 4.) Now, Alice and Bob have the same bit-string - the KEY.
 
 ## Security
 
-Qubit (in our case photon) cannot be measured without being perturbated or in other words without changing it's state. To be more precise, if Eve(as a man-in-the-middle) eavesdroppes bits send from Alice to Bob - for each measured bit she has a 50/50 chance to guess the polarization correctly(consequenlty measuring the correct state of the bit). Unsuccesful choice of polarization gives here false information about the transmitted bit. Following her measurement she transmits her "choice" (polarization and the measure bit) to Bob (note that Eve had to re-create the state, since the one she measured from Alice is pertubated as mentioned at the beggining). 
+Qubit (in our case photon) cannot be measured without being perturbated or in other words without changing it's state. To be more precise, if Eve(as a man-in-the-middle) eavesdroppes bits send from Alice to Bob - for each measured bit she has a 50/50 chance to guess the polarization correctly(consequenlty measuring the correct state of the bit). Unsuccesful choice of polarization gives here false information about the transmitted bit. 
+Following her measurement she transmits her "choice" (polarization and the measure bit) to Bob (note that Eve had to re-create the state, since the one she measured from Alice is pertubated as mentioned at the beggining). 
 As a countermeasure to the fact Eve can be right in half of here attempts, Bob and Alice share a few bits(about 10% usually) and check if they match. Any dissagrement of compared bits will expose the presence of an attacker. 
 
 The following can be summarized using a table from the Wikipedia:
