@@ -62,6 +62,8 @@ Following that there is a:
 chance Alice and Bob might not detect Eve's eavesdropping, where x is the number of checked bits.
 For the sake of completness, here is probability graph:
 
+![img](img/risk_graph.png)
+
 Consequently in the example script we are using 15 bits to match, since that corresponds to only 1,3% chance Eve might get away unnoticed. 
 
 ## Why it this key exchange more secure?
