@@ -1,10 +1,10 @@
-# QKE
+# Quantum Key Exchange (QKE)
 
-## Qubit as a photon
+## Qubit
 
 For the purpose of this example I will consider qubits as photons, otherwise qubits can also be thought of as electrons spin, quantum dot etc.
 
-Before understanding how photon relates to qubit we need give a brief introduction to the concept of polarization. <br>
+Before understanding how photon relates to qubit we need to give a brief introduction to the concept of polarization. <br>
 Photon (waves) can be polarized in three different ways: **linear**, **circular** and **elliptical**:
 - **Linear polarization** is a type of light polarization where the waveform of light is limited to a single plane(Often seen as a waveform we see if we filter circular wave for a particular angle)
 - **Circular Polarization** is a type of light polarization when there are two waves that are perpendicular to each other (e.g. Electromagnetic wave) while also having the same amplitude and phase shift
@@ -12,7 +12,7 @@ Photon (waves) can be polarized in three different ways: **linear**, **circular*
 
 ![image](https://user-images.githubusercontent.com/48418580/150874277-2da17f5b-dff9-4f57-ac92-e2166a087543.png)
 
-The last two polarization are mentioned to avoid any confusion later on.
+The last two polarization are mentioned to avoid any confusion later on (once we introduce sub-types of polarizations).
 
 For the case of QKE we will consider linear polarization. Its "sub-types" are **rectilinear** or **diagonal** polarization. <br>
 Rectilinear polarization and its correspoding qubit state are chosen as: **horizontal |0>** and **vertical |1>**.
