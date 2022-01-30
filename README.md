@@ -4,7 +4,7 @@
 
 For the purpose of this example I will consider qubits as photons, otherwise qubits can also be thought of as electrons spin, quantum dot etc.
 
-Before understanding how photon relates to qubit we need to give a brief introduction to the concept of polarization. <br>
+Before understanding how qubit can be thought of as photon we need to give a brief introduction to the concept of polarization. <br>
 Photon (waves) can be polarized in three different ways: **linear**, **circular** and **elliptical**:
 - **Linear polarization** is a type of light polarization where the waveform of light is limited to a single plane(Often seen as a waveform we see if we filter circular wave for a particular angle)
 - **Circular Polarization** is a type of light polarization when there are two waves that are perpendicular to each other (e.g. Electromagnetic wave) while also having the same amplitude and phase shift
