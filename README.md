@@ -6,20 +6,18 @@ For the purpose of this example I will consider qubits as photons, otherwise qub
 
 Before understanding how qubit can be thought of as photon we need to give a brief introduction to the concept of polarization. <br>
 Photon (waves) can be polarized in three different ways: **linear**, **circular** and **elliptical**:
-- **Linear polarization** is a type of light polarization where the waveform of light is limited to a single plane(Often seen as a waveform we see if we filter circular wave for a particular angle)
+- **Linear polarization** is a type of light polarization where the waveform of light is limited to a single plane
 - **Circular Polarization** is a type of light polarization when there are two waves that are perpendicular to each other (e.g. Electromagnetic wave) while also having the same amplitude and phase shift
 - **Elliptical Polarization** is a type of light polarization similar to Circular polarization, while the two waves have different amplitudes and different phase shift
 
 ![image](https://user-images.githubusercontent.com/48418580/150874277-2da17f5b-dff9-4f57-ac92-e2166a087543.png)
 
-The last two polarization are mentioned to avoid any confusion later on (once we introduce sub-types of polarizations).
-
 For the case of QKE we will consider linear polarization. Its "sub-types" are **rectilinear** or **diagonal** polarization. <br>
-Rectilinear polarization and its correspoding qubit state are chosen as: **horizontal |0>** and **vertical |1>**.
+Rectilinear polarization and its correspoding qubit state are: **horizontal |0>** and **vertical |1>**.
 
 ![image](https://user-images.githubusercontent.com/48418580/150874172-e3a774e2-4603-414d-b174-8b8e2b8d0b20.png)
 
-Diagonal polarization and its corresponding qubit state are chosen as: **diagonal |0>** and **anti-diagonal |1>**.
+Diagonal polarization and its corresponding qubit state are: **diagonal |0>** and **anti-diagonal |1>**.
 
 ![image](https://user-images.githubusercontent.com/48418580/150874216-82690962-08b4-4752-afd7-db145b2aa27a.png)
 
